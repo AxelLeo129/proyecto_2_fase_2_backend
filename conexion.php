@@ -1,7 +1,7 @@
 <?php
 
     $host = "DESKTOP-CQEB9CM\MSSQLSERVER1";
-    $database = "prueba";
+    $database = "graph_music";
     $user = "sa";
     $password = "1296";
 
@@ -16,6 +16,7 @@
         if( $conn === false ) {
             die( print_r( sqlsrv_errors(), true)); //See why it fails
         }
+
     } catch(Exception $e) {
         echo $e->getMessage();
     }
